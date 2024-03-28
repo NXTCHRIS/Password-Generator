@@ -13,15 +13,15 @@
     </header>
     <main>
       <div class="input-box-display">
-        <input type="text" placeholder="Password" />
+        <input type="text" placeholder="Password" id="main-input" />
         <img src="clipboard.png" width="25px" height="25px" />
       </div>
       <div class="main-settings-display">
         <div class="character-length-display" style="color: white">
           <p>Charachter Length</p>
-          <p>0</p>
+          <p class="char-length">0</p>
         </div>
-        <input type="range" step="0.5" min="8" max="16" class="range" />
+        <input type="range" step="1" max="10" class="range" />
         <div class="options-list" style="color: white">
           <input type="checkbox" id="uppercase" name="scales" />
           <label for="uppercase">Include Uppercase Letters</label><br />
@@ -35,15 +35,15 @@
         <div class="strength-display" style="color: white">
           <p>Strength</p>
           <div class="strength-scale">
-            <div class="stage1">*</div>
-            <div class="stage2">*</div>
-            <div class="stage3">*</div>
-            <div class="stage4">*</div>
+            <div class="stage1"></div>
+            <div class="stage2"></div>
+            <div class="stage3"></div>
+            <div class="stage4"></div>
           </div>
         </div>
       </div>
       <div class="main-button-section">
-        <button>GENERATE</button>
+        <button id="main-btn">GENERATE</button>
       </div>
     </main>
   </body>
