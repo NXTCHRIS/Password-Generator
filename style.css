@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,4 +42,115 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/* general styles */
+main {
+    min-width: 375px;
+    max-width: fit-content;
+    width: 50%;
+    margin: 0 auto;
+}
+header {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #e8e7ef;
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.input-box-display {
+    background-color: rgba(36,35,43,255);
+    margin-bottom: 20px;
+    padding-inline-end: 10px;
+}
+.main-settings-display{
+    background-color: rgba(36,35,43,255);
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e8e7ef;
+    padding-bottom: 20px;
+}
+
+/* input sections styles */
+.input-box-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-box-display input {
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    color: #e8e7ef;
+    font-size: 1.5rem;
+}
+.input-box-display input:placeholder-shown {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.input-box-display input:focus {
+    outline: none;
+}
+
+/* General settings section styles */
+.character-length-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 15px;
+    padding-block: 15px;
+    letter-spacing: 1px;
+}
+.range {
+    width: 93%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-block: 15px;
+}
+.options-list {
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.strength-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(24,23,31,255);
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.strength-scale {
+    display: flex;
+    gap: 10px;
+}
+.stage1,
+.stage2,
+.stage3,
+.stage4 {
+    width: 5px;
+    background-color:#a4ffaf;
+    color: #a4ffaf;
+}
+/* Main button styles */
+.main-button-section {
+    background-color: rgba(36,35,43,255);
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 92%;
+    padding-block: 10px;
+    background-color: #a4ffaf;
+    color: black;
+    font-family: "Rakkas", serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    border: none;
 }
